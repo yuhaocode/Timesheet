@@ -1,0 +1,36 @@
+
+
+spring.datasource: # Database information
+  url: "jdbc:mysql://localhost:3306/hrmdata"
+  username: "root"
+  password: "root"
+  testWhileIdle: true
+  validationQuery: "SELECT 1"
+
+spring.jpa: # JPA configuration
+  hibernate.ddl-auto: "update"
+  show-sql: false
+  properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
+demo.security.jwt: # Customized JWT token properties
+  tokenExpirationTime: 10 # Number of minutes
+  refreshTokenExpTime: 30 # Minutes
+  tokenIssuer: "http://www.authright.com"
+  tokenSigningKey: "xm8EV6Hy5RMFK4EEACIDAwQus"
+
+spring:
+    profiles:
+        active: dev
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: patrickpengyh@gmail.com  #Replace this field with your Gmail username.
+        password: peng1111           #Replace this field with your Gmail password.
+        protocol: smtp
+        tls: true
+        properties.mail.smtp:
+            auth: true
+            starttls.enable: true
+            ssl.trust: smtp.gmail.com
+
+#email config

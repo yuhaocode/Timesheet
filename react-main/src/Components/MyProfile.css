@@ -1,0 +1,121 @@
+
+.root {
+  margin-top: 100,
+} 
+
+#nameBackground {
+  /* margin: 500 !important; */
+     /* margin-top: -100 !important; */
+    padding-top: 30 !important;  
+    padding-bottom: 30 !important; 
+    background-color: #424242 !important;
+    opacity: 0.6 !important;
+    z-index: 2 !important;
+
+  animation-duration : 1s !important;
+  animation-name: appear !important;
+}
+
+.container {
+  margin : 0 !important ;
+  padding-top: 100 !important
+  /* padding-bottom: 0 !important */
+}
+
+.profileBackground {
+  /* padding-top: 20 !important; */
+  padding-bottom: 30 !important;
+  background-color: #212121 !important;
+  margin-top: 8 !important;
+  opacity: 0.7 !important;
+  animation-duration: 1s;
+animation-name: appear;
+}
+
+
+#portrait {
+  margin-top: 100 !important;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+    /* transform: scale(0);;  */
+    visibility: hidden
+  }
+  to {
+    /* transform: scale(1); */
+    margin-left: 20%;
+    visibility: visible
+  }
+}
+/* .MyProfile-paper-385 {
+animation-duration: 2s;
+animation-name: appear;
+}
+.MyProfile-profile-386 {
+animation-duration: 2s;
+animation-name: appear;
+} */
+@keyframes appear {
+from {
+  transform: scale(0);
+  /* width: 0%; */
+  visibility: hidden
+}
+to {
+  transform: scale(1);
+  /* width: 100%; */
+  visibility: visible
+}
+}
+
+.newPassword {
+border-top: 1px dotted #666666;
+text-align: right !important;
+margin-left: 20px !important;
+margin-bottom: 20px  !important;
+
+
+}
+/* .MuiInput-root-408, .MuiInput-formControl-409, .MuiInput-inkbar-410 {
+color: #FAFAFA !important
+}
+
+.MuiFormLabel-root-404, .MuiInputLabel-root-398, .MuiInputLabel-formControl-399, .MuiInputLabel-animated-402, .MuiInputLabel-shrink-401, .MuiInputLabel-labelDense-400 {
+color: #E0E0E0 !important;
+opacity: 0.6 !important
+}
+
+.MuiFormHelperText-root-423, .MuiFormHelperText-dense-424 {
+color: #E0E0E0 !important;
+opacity: 0.4 !important
+} */
+
+
+
+
+
+
+/* .fade-enter {
+opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+opacity: 1;
+transition: opacity 1000ms ease-in;
+} */
+
+/* .fade-exit {
+opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+opacity: 0.01;
+transition: opacity 800ms ease-in;
+} */
+
+
+
+
